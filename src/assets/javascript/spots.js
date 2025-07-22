@@ -59,9 +59,10 @@ export default class Spots {
 
     // Default colours
     this.strokeColors = this.prefersLightMode
-      ? [[101, 55, 179]]
+    // RGB
+    // https://www.w3schools.com/colors/colors_converter.asp
+      ? [[153, 118, 213]]
       : [[120, 33, 153]];
-
     if (this.settings.useCalendarThemes) {
       // Some days have unique colours, so get the date.
       // This is in format MM-DD (no year)
