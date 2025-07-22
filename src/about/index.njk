@@ -1,0 +1,44 @@
+---
+layout: null
+title: About beeps
+metadata:
+  description: I'm pretty weird, tbh.
+---
+
+{% extends 'src/_layouts/layout.njk' %}
+
+{% block head %}
+<style>
+.page-emoji {
+  display: block;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 3em;
+}
+</style>
+{% endblock %}
+
+{% macro _item(emoji) %}
+<div class="kimGrid_column kimGrid_column-full galaxy:kimGrid_column-oneHalf defiant:kimGrid_column-oneThird">
+  <span class="page-emoji">{{ emoji }}</span>
+  {% markdown %}{{- caller() -}}{% endmarkdown %}
+</div>
+{% endmacro %}
+
+{% block main %}
+  <article class="kim-!-margin-block-9">
+    <div class="kimWrapper">
+      <div class="kimGrid">
+        <header class="kimGrid_column kimGrid_column-full">
+          <h1 class="kimHeading-xl">
+            {{ title }}
+          </h1>
+        </header>
+      </div>
+      <div class="kimGrid">
+        {% call _item("🪪") %}
+        asdf
+        {% endcall %}
+      </div>
+    </div>
+  </article>
+{% endblock %}
