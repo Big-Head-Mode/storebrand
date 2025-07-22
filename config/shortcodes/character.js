@@ -3,183 +3,28 @@ import pluginImages from "@11ty/eleventy-img";
 
 // List of available variants, images and alt text
 const variants = {
-  ash: [
-    {
-      name: "angry",
-      image: "angry.svg",
-      alt: "An amphimorpho looking at you angrily.",
-    },
-    {
-      name: "alarmed",
-      image: "grimace.svg",
-      alt: "An amphimorpho looking alarmed and grimacing.",
-    },
-    {
-      name: "blushing",
-      image: "blushing.svg",
-      alt: "An amphimorpho blushing happily with eyes closed.",
-    },
-    {
-      name: "happy",
-      image: "happy.svg",
-      alt: "An amphimorpho smiling happily.",
-    },
-    {
-      name: "laughing",
-      image: "laughing.svg",
-      alt: "An amphimorpho laughing joyfully with tears in its eyes.",
-    },
-    {
-      name: "love",
-      image: "hearts.svg",
-      alt: "An amphimorpho smiling warmly with multiple love hearts floating around it.",
-    },
-    {
-      name: "pensive",
-      image: "pensive.svg",
-      alt: "An amphimorpho with ears drooped and eyes closed in contemplation.",
-    },
-    {
-      name: "sad",
-      image: "sad.svg",
-      alt: "A sad amphimorpho gently weeping.",
-    },
-    {
-      name: "sleepy",
-      image: "sleepy.svg",
-      alt: "An amphimorpho with ears drooped and mouth hung open, sleepy Zs emanating from it.",
-    },
-    {
-      name: "thinking",
-      image: "thinking.svg",
-      alt: "An amphimorpho looking to the side in puzzlement, with a paw on its chin in thought.",
-    },
-    {
-      name: "tongue",
-      image: "tongue.svg",
-      alt: "An amphimorpho cheekily sticking its tongue out at you.",
-    },
-    {
-      name: "paw",
-      image: "paw.svg",
-      alt: "A white-furred cat-like paw with green pawpad and toe beans.",
-    },
-    {
-      name: "tail",
-      image: "tail.svg",
-      alt: "A curved black and white furred tail with a slimy, bright green tip.",
-    },
-  ],
-  emy: [
-    {
-      name: "alarmed",
-      image: "alarmed.png",
-      alt: "An alarmed looking robot bat.",
-    },
+  ali: [
     {
       name: "angry",
       image: "angry.png",
-      alt: "A robot bat gesturing angrily.",
-    },
-    {
-      name: "broken",
-      image: "broken.png",
-      alt: "A robot bat looking disappointedly down at a wing that's fallen off.",
-    },
-    { name: "dab", image: "dab.png", alt: "A robot bat dabbing." },
-    {
-      name: "gun",
-      image: "gun.png",
-      alt: "A robot bat casually brandishing a pistol.",
-    },
-    { name: "happy", image: "happy.png", alt: "A robot bat cheering happily." },
-    {
-      name: "innards",
-      image: "innards.png",
-      alt: "A robot bat with its chest open, exposing the wiring within and looking at you expectantly.",
-    },
-    {
-      name: "flying",
-      image: "flying.png",
-      alt: "A robot bat flying through the sky, propulsive flames shooting from its back.",
-    },
-    { name: "love", image: "love.png", alt: "A robot bat blowing a kiss." },
-    {
-      name: "point",
-      image: "point.png",
-      alt: "A robot bat looking and pointing to the right.",
-    },
-    {
-      name: "point-down",
-      image: "point-down.png",
-      alt: "A robot bat looking and pointing downwards.",
-    },
-    {
-      name: "point-up",
-      image: "point-up.png",
-      alt: "A robot bat looking and pointing upwards.",
-    },
-    {
-      name: "wave",
-      image: "wave.png",
-      alt: "A robot bat looking and waving at you.",
-    },
-  ],
-  yinglet: [
-    {
-      name: "annoyed",
-      image: "annoyed.svg",
-      alt: "An annoyed looking yinglet with a red frustration symbol.",
-    },
-    {
-      name: "awestruck",
-      image: "awestruck.svg",
-      alt: "A yinglet looking amazed with many yellow sparkles floating around it.",
-    },
-    {
-      name: "blushing",
-      image: "blushing.svg",
-      alt: "A yinglet looking taken aback and blushing hot red.",
-    },
-    {
-      name: "happy",
-      image: "happy.svg",
-      alt: "A yinglet smiling with its eyes closed.",
+      alt: "An alarmed looking robot bat.",
     },
     {
       name: "hearts",
       image: "hearts.svg",
-      alt: "A yinglet smiling deeply, its eyes closed and surrounded by floating hearts.",
+      alt: "A robot bat gesturing angrily.",
+    },
+  ],
+  mabel: [
+    {
+      name: "angry",
+      image: "angry.png",
+      alt: "An alarmed looking robot bat.",
     },
     {
-      name: "laugh",
-      image: "laugh.svg",
-      alt: "A yinglet laughing heartily.",
-    },
-    {
-      name: "sad",
-      image: "sad.svg",
-      alt: "A yinglet looking upset, ears flopped backward and slightly deflated.",
-    },
-    {
-      name: "scared",
-      image: "scared.svg",
-      alt: "A yinglet only just peeking out from behind an invisible wall, blue in the face and with a large sweat drop.",
-    },
-    {
-      name: "smirking",
-      image: "smirking.svg",
-      alt: "A yinglet smirking coyly.",
-    },
-    {
-      name: "suspicious",
-      image: "suspicious.svg",
-      alt: "A yinglet squinting at something with suspicion.",
-    },
-    {
-      name: "thinking",
-      image: "thinking.svg",
-      alt: "A yinglet with a hand on its chin and a thought bubble.",
+      name: "hearts",
+      image: "hearts.svg",
+      alt: "A robot bat gesturing angrily.",
     },
   ],
 };

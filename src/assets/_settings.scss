@@ -2,7 +2,7 @@
 
 :root {
   // Font families
-  --font-body: "Space Grotesk", system-ui, sans-serif, "Apple Color Emoji",
+  --font-body: system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   --font-heading: var(--font-body);
   --font-code: "Space Mono", monospace, monospace;
@@ -54,8 +54,8 @@
   --c-white: #fff;
   --c-purple: #786999;
   --c-dark-purple: #2a2536;
-  --c-green: oklch(85.29% 0.323 142.82);
-  --c-dark-green: #12803b;
+  --c-green: oklch(0.7 0.2146 337.76);
+  --c-dark-green: #501280;
   --c-yellow: #fc0;
 
   // Semantic colours
@@ -72,8 +72,8 @@
     #{color.change(#786999, $lightness: 15%)}
   );
   --color-surface-accent: light-dark(
-    #{color.change(#00fa17, $lightness: 94%)},
-    #{color.change(#00fa17, $lightness: 15%)}
+    #{color.change(#cc00fa, $lightness: 94%)},
+    #{color.change(#fa000c, $lightness: 15%)}
   );
   --color-furniture: var(--c-purple);
   --color-link: light-dark(var(--c-dark-green), var(--c-green));

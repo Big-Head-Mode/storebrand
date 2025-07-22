@@ -1,6 +1,6 @@
 ---
 layout: brand.njk
-title: beeps' brand
+title: Brand
 updated: 2025-04-19
 metadata:
   description: The style guide for my personal projects, including this website.
@@ -10,14 +10,20 @@ cssComponents:
   - code
 ---
 
+This page explains brand decisions of upstream. However, the actual styling is in `src/assets/_settings.scss`.
+
+{% pairedcanned %}
+{{ page.url }} {{page.inputPath}}
+{% endpairedcanned %}
+
 {% set colourAssignments = [
   { name: "Text", dark: "#ffffff", light: "#334139" },
   { name: "Supporting text", dark: "#d4d4d7", light: "#586b60" },
-  { name: "Accent text and links", dark: "#00fa17", light: "#12803b" },
-  { name: "Hovered and visited links", dark: "#12c873", light: "#2baf5d" },
+  { name: "Accent text and links", dark: "#00FAFF", light: "#1280FF" },
+  { name: "Hovered and visited links", dark: "#12C8FF", light: "#2BAFFF" },
   { name: "Canvas", dark: "#2a2536", light: "#ffffff" },
   { name: "Surface", dark: "#3d364f", light: "#f4f3f7" },
-  { name: "Page furniture", dark: "#786999", light: "#786999" }
+  { name: "Page furniture", dark: "#FF6999", light: "#FF6999" }
 ] %}
 
 <style>
@@ -35,20 +41,7 @@ cssComponents:
 </span>
 {% endmacro %}
 
-A lot of famous individuals are well known for [always wearing the same clothes](https://edition.cnn.com/2015/10/09/world/gallery/decision-fatigue-same-clothes/index.html). Usually they credit this to reducing "decision fatigue"—not having to choose how to dress every day leaves time to mull over the more important decisions.
-
-I don't wear exactly the same clothes every day, but when it comes to building random pages and side projects, I usually spend more time thinking about how it looks than how it works. Consequentially, since late-2021, I've tried to cut down on decision fatigue by making my personal projects follow the same set of basic design rules.
-
----
-
-## General principles
-
-- Be square and blocky. There aren't many circles or curves here.
-- Follow good accessibility practices. Use contrasting colours, write good copy.
-
 ## Colours
-
-I maintain a pretty limited palette of base colours. Shades and tints of each are allowed.
 
 Always aim to achieve at least a 4.5:1 contrast ratio between text and background colours, in accordance with [the WCAG Level AA criterion](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
@@ -80,14 +73,6 @@ Always aim to achieve at least a 4.5:1 contrast ratio between text and backgroun
 [Space Mono](https://fonts.google.com/specimen/Space+Mono) is used for code snippets and as a stylistic alternative for small amounts of text. It's used in bold (700) and regular (400) weights.
 
 ## Iconography
-
-### Robat icon
-
-The logo of the website (and pretty much just this website). This has been a symbol I've used for longer than you'd expect, [since around 2010]({{ '/blog/2023-07-25-20-years/#numbers' | url }}).
-
-<div class="page-icon">
-  <img src="{{ '/assets/images/icons/favicon.svg' | url }}" alt="Silhouette of a stylised bat's head, within which the cutout of a mechanical gear is visible.">
-</div>
 
 ### Utility icons
 

@@ -59,8 +59,8 @@ export default class Spots {
 
     // Default colours
     this.strokeColors = this.prefersLightMode
-      ? [[179, 255, 179]]
-      : [[120, 105, 153]];
+      ? [[101, 55, 179]]
+      : [[120, 33, 153]];
 
     if (this.settings.useCalendarThemes) {
       // Some days have unique colours, so get the date.

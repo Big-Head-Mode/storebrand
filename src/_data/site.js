@@ -2,83 +2,56 @@ const environment = process.env.ENVIRONMENT;
 
 export default function () {
   return {
-    name: "beeps",
-    blogName: "beeps' blog",
-    blogDescription: "The inane ramblings of beeps.",
-    authorName: "beeps",
-    authorEmail: "hi@berly.kim",
-    twitterUsername: "@batbeeps",
-    mastodonUsername: "@beeps@social.beeps.gay",
-    domain: "https://beeps.website",
+    name: "myname",
+    blogName: "/src/_data/site.js",
+    blogDescription: "/src/_data/site.js",
+    authorName: "asdf",
+    authorEmail: "asdf",
+    twitterUsername: "asdf",
+    mastodonUsername: "@asdf@mastodon.fake",
+    domain: "https://example.com",
     environment,
     relMe: [
-      "https://chitter.xyz/@batbeeps",
-      "https://social.beeps.gay/@beeps",
-      "https://bsky.app/profile/beeps.gay",
-      "https://twitter.com/batbeeps",
-      "https://github.com/querkmachine",
+      // "https://chitter.xyz/@batbeeps",
+      // "https://social.beeps.gay/@beeps",
+      // "https://bsky.app/profile/beeps.gay",
+      // "https://twitter.com/batbeeps",
+      // "https://github.com/querkmachine",
     ],
     navigation: [
       {
-        heading: "Beeping",
+        heading: "head1",
         links: [
-          {
-            href: "/blog/",
-            text: "Blog",
-            description: "Aimless whitterings about life and other stuff.",
-          },
-          {
-            href: "/about/",
-            text: "About beeps",
-            description: "Everything about me. Like, everything.",
-          },
-          {
-            href: "/now/",
-            text: "beeps NOW!",
-            description: "Stuff I've been up to recently.",
-          },
-          {
-            href: "/contact/",
-            text: "Contact",
-            description: "Get in touch! Or don't.",
-          },
+          { href: "/blog/", text: "Blog", description: "you can set descriptions too" },
+          { href: "/about/", text: "About me", description: "you can set descriptions too" },
+          { href: "/now/", text: "/now", description: "you can set descriptions too" },
+          { href: "/contact/", text: "Contact", description: "you can set descriptions too" },
         ],
       },
       {
-        heading: "Web development",
+        heading: "head2",
         links: [
           {
-            href: "/accessibility-for-furries/",
-            text: "Accessibility for furries",
-            description: "Free web accessibility audits for the fandom.",
+            href: "/asdf/",
+            text: "asdf", description: "you can set descriptions too"
           },
-          {
-            href: "/govuk-browser-data/",
-            text: "GOV.UK browser data",
-            description:
-              "Monthly analytics data from one of the UK's busiest websites.",
-          },
+          { href: "/hjkl/", text: "hjkl", description: "you can set descriptions too" },
         ],
       },
       {
-        heading: "And more",
+        heading: "head3",
         links: [
           {
             href: "/ash/",
-            text: "Ash the amphimorpho",
-            description: "Reference sheet and lore for my fursona.",
-            classes: "kimNavigation_link-ash",
+            text: "ash",
+            classes: "kimNavigation_link-ash", description: "you can set descriptions too"
           },
-          {
-            href: "/links/",
-            html: "Cool links &amp; friend sites",
-            description: "Neat peeps and neat things.",
-          },
+          { href: "/links/", html: "Cool links", description: "you can set descriptions too" },
         ],
       },
     ],
     legalLinks: [
-      { href: "/brand/", text: "beeps' brand" },
+      { href: "/brand/", text: "mybrand" },
       { href: "/colophon/", text: "Colophon" },
       { href: "/accessibility/", text: "Accessibility statement" },
       { href: "/privacy/", text: "Cookies and privacy" },

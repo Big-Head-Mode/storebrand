@@ -2,3 +2,5 @@ node_modules/
 _site/
 .cache/
 .avatar-cache/
+*.bak
+nppBackup/

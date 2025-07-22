@@ -39,7 +39,7 @@
       </head>
       <body>
         <aside>
-          <p>This is an RSS feed. An ancient and mysterious piece of technology that allows you to use an <a href="https://en.wikipedia.org/wiki/Comparison_of_feed_aggregators">feed aggregator</a> to access the content of <a href="https://beeps.website/blog/">my blog</a>.</p>
+          <p>This is an RSS feed. You can use a <a href="https://en.wikipedia.org/wiki/Comparison_of_feed_aggregators">feed aggregator</a> with it.</p>
           <p>Copy the URL of this page into your aggregator to add it.</p>
         </aside>
         <section>

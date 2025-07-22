@@ -34,6 +34,9 @@ import {
 
 // Nunjucks shortcodes
 import shortcodeCallout from "./config/shortcodes/callout.js";
+// https://stackoverflow.com/questions/76191154/the-requested-module-does-not-provide-an-export-named-default
+import { HelloWorld , betterHelloWorld, pairedCanned, upstreamCanned} from "./config/shortcodes/tools_shortcodes.js";
+// import betterHelloWorld from "./config/shortcodes/tools_shortcodes.js";
 import shortcodeCharacter from "./config/shortcodes/character.js";
 import shortcodeFigure from "./config/shortcodes/figure.js";
 import shortcodeImageDiffer from "./config/shortcodes/imageDiffer.js";
@@ -111,6 +114,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addNunjucksGlobal("getTableOfContents", getTableOfContents);
 
   // Custom Nunjucks Shortcodes
+  eleventyConfig.addShortcode("user", function(firstName, lastName) { /* … */ });
   eleventyConfig.addPairedNunjucksShortcode("callout", shortcodeCallout);
   eleventyConfig.addPairedNunjucksShortcode("character", shortcodeCharacter);
   eleventyConfig.addPairedNunjucksShortcode("figure", shortcodeFigure);
@@ -118,6 +122,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("link", shortcodeLink);
   eleventyConfig.addPairedNunjucksShortcode("markdown", markdownFilter);
   eleventyConfig.addNunjucksShortcode("redaction", shortcodeRedaction);
+  eleventyConfig.addNunjucksShortcode("helloworld", HelloWorld);
+  eleventyConfig.addNunjucksShortcode("betterhelloworld", betterHelloWorld);
+  eleventyConfig.addNunjucksShortcode("upstreamcanned", upstreamCanned);
+  eleventyConfig.addPairedNunjucksShortcode("pairedcanned", pairedCanned);
   eleventyConfig.addNunjucksAsyncShortcode(
     "responsiveImage",
     shortcodeResponsiveImage,
